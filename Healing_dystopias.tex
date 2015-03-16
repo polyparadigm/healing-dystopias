@@ -1,0 +1,81 @@
+\documentclass[12pt]{book}
+\usepackage[width=4.375in, height=7.0in, top=1.0in, papersize={5.5in,8.5in}]{geometry}
+\usepackage[pdftex]{graphicx}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{tipa}
+\usepackage{textcomp}
+\usepackage{fancyhdr}
+
+%Handling font switching
+\usepackage{tgbonum}
+\usepackage[T1]{fontenc}
+
+%Fonts, including a handwritten-looking one
+\usepackage{emerald}
+\usepackage[T1]{fontenc}
+%%Another font I had considered using
+%\DeclareTextFontCommand{\texthw}{\ECFTeenSpirit}
+\DeclareTextFontCommand{\texthw}{\ECFAugie}
+\hyphenation{For-ster}
+
+\pagestyle{fancy}
+\renewcommand{\chaptermark}[1]{\markboth{#1}{}}
+\renewcommand{\sectionmark}[1]{\markright{\thesection\ #1}}
+\fancyhf{}
+\fancyhead[LE,RO]{\bfseries\thepage}
+\fancyhead[LO]{\bfseries\rightmark}
+\fancyhead[RE]{\bfseries\leftmark}
+\renewcommand{\headrulewidth}{0.5pt}
+\renewcommand{\footrulewidth}{0pt}
+\addtolength{\headheight}{0.5pt}
+\setlength{\footskip}{0in}
+\renewcommand{\footruleskip}{0pt}
+\fancypagestyle{plain}{%
+\fancyhead{}
+\renewcommand{\headrulewidth}{0pt}
+}
+%
+%\parindent 0in
+\parskip 0.06in
+%
+\begin{document}
+\frontmatter
+%
+
+``The Machine Stops" was first published in the \textit{Oxford and Cambridge Review} in 1909. It is in the public domain in the United States because it was published before January 1, 1923.
+The author died in 1979, so this work is also in the public domain in countries and areas where the copyright term is the author's life plus 30 years or less. This work may also be in the public domain in countries and areas with longer native copyright terms that apply the rule of the shorter term to foreign works.
+
+``Scanners Live in Vain" was first published in \textit{ Fantasy Book} in 1950. Publicly available records show no renewal of copyright. The author died in 1966, so this work is also in the public domain in countries and areas where the copyright term is the author's life plus 30 years or less. This work may also be in the public domain in countries and areas with longer native copyright terms that apply the rule of the shorter term to foreign works.
+%http://en.wikipedia.org/wiki/Wikipedia:Reference_desk/Archives/Humanities/2007_April_15
+%I'm checking for a copyright renewal on the short story "Scanners Live in Vain", by Cordwainer Smith. It was first published in a magazine, Fantasy Book, in 1950; the copyright on that magazine was not renewed. The copyright on the short story itself was not individually renewed, and it doesn't appear in any copyright renewal records with Smith's pseudonym or real name in them.--Grendelkhan, http://en.wikipedia.org/wiki/User:Grendelkhan
+%
+
+This selection, arrangement, and the foreword are licensed under the Creative Commons At\-trib\-ution-\newline{}Share\-Alike 3.0 Unported License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/3.0/ or send a letter to Creative Commons, 444 Castro Street, Suite 900, Mountain View, California, 94041, USA.
+\tableofcontents
+%
+\include{healing_foreword}
+%
+\mainmatter
+%
+\chapter{The Machine Stops}
+\thispagestyle{empty}
+%{\hspace{0.25in} \includegraphics{./ru_sun.jpg} }
+\section*{\huge \center E. M. Forster}
+\newpage
+%
+\include{Machine-as-chapter}
+%
+\chapter{Scanners Live in Vain}
+\thispagestyle{empty}
+%{\hspace{0.25in} \includegraphics{./ru_sun.jpg} }
+\section*{\huge \center Cordwainer Smith}
+\newpage
+%
+\include{Scanners-as-chapter}
+%
+%\backmatter
+%
+%\begin{thebibliography}{99}
+%\end{thebibliography}
+\end{document}
